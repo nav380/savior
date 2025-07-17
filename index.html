@@ -1,0 +1,820 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVIORHIRE - Help you to achive goal</title>
+    <link rel="icon" type="image/png" href="./images/logosavior.jpg">
+
+
+
+    <link rel="shortcut icon" href="./images/logosavior.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/services.js"></script>
+    <script src="./js/strength.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/landing.js"></script>
+    <script src="./js/rocket.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+    <!-- ############################### SEO ############################### -->
+</head>
+
+<body class="font-sans text-gray-800 bg-slate-50 overflow-x-hidden " oncontextmenu="return false">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 shadow-sm ">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/logosavior.jpg" alt="Savior Tech Logo"
+                        class="w-14 h-14  rounded-full object-cover">
+                    <a href="#" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition duration-300">
+                        Savior Hire
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                    <a href="#home" class="relative group transition duration-300">
+                        Home
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#services" class="relative group transition duration-300">
+                        Services
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#about" class="relative group transition duration-300">
+                        About
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#team" class="relative group transition duration-300">
+                        Team
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#Payment-Options" class="relative group transition duration-300">
+                        Plans
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="relative group transition duration-300">
+                        Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+
+                <!-- Mobile Toggle Button
+                <button id="menu-btn" class="md:hidden focus:outline-none">
+                    <svg id="menu-icon" class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button> -->
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Sticky Background Section with Smooth Slideshow -->
+        <div id="sticky-bg" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+
+            <canvas id="starCanvas" class="absolute bg-black inset-0 -z-10 h-[100vh]"></canvas>
+
+            <!-- Cursor Glow (above everything but doesn't block) -->
+            <div id="cursorGlow"></div>
+
+            <!-- Main Content -->
+            <div class="relative z-10 p-10 backdrop-blur-sm rounded-3xl w-full space-y-4 text-center font-serif ">
+                <div class="flex justify-center">
+                    <!-- Gradient Star Icon -->
+                    <div
+                        class="text-5xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text animate-pulse">
+                        🌟
+                    </div>
+                </div>
+                <h1
+                    class="lg:text-[120px] text-[48px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
+                    Building Future
+                </h1>
+                <h2 class="lg:text-8xl text-xl text-white/80 mt-8">
+                    Transform Your Career
+                </h2>
+                <p class="text-white/70 lg:text-4xl text-md mt-24">
+                    Streamline millions of people struggling to find a job because of lack of guidance and
+                    opportunities.
+                </p>
+                <button onclick="location.href='#hero-banner'"
+                    class="py-3 px-8 mt-20 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-semibold btn-glow transition transform hover:scale-105">
+                    Get Started 🚀
+                </button>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bg-gray-50 bottom-0 rounded-t-4xl h-8 w-full text-center"></div>
+        </div>
+
+
+
+
+        <!-- Hero banner -->
+        <section id="hero-banner"
+            class="relative bg-gradient-to-br from-pink-50 via-purple-50 to-gray-100 overflow-hidden">
+            <!-- Floating Bubbles -->
+            <div class="absolute inset-0 pointer-events-none">
+                <!-- Bubble 1 -->
+                <div class="bubble bg-pink-400"></div>
+                <!-- Bubble 2 -->
+                <div class="bubble bg-purple-400"></div>
+                <!-- Bubble 3 -->
+                <div class="bubble bg-blue-400"></div>
+                <!-- Bubble 4 -->
+                <div class="bubble bg-yellow-400"></div>
+                <!-- Bubble 5 -->
+                <div class="bubble bg-green-400"></div>
+            </div>
+
+            <div class="container mx-auto px-6 md:px-16 max-w-7xl relative z-10">
+                <div
+                    class="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen gap-8 md:gap-20">
+
+                    <!-- Hero Image -->
+                    <div class="relative w-full md:w-6/12">
+                        <div
+                            class="absolute -top-20 -left-10 md:-top-32 md:-left-20 w-72 h-72 md:w-[500px] md:h-[500px] bg-gradient-to-tr from-pink-300 via-purple-300 to-purple-100 rounded-full blur-3xl opacity-50 z-0">
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Hero Image"
+                            class="relative z-10 rounded-[2rem] shadow-2xl border-4 border-white object-cover w-full h-auto">
+                    </div>
+
+                    <!-- Banner Text -->
+                    <div class="z-20 w-full md:w-6/12 space-y-6">
+                        <span
+                            class="inline-block py-2 px-5 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs md:text-sm font-semibold rounded-full shadow-lg tracking-wide">
+                            Introducing SAVIORTRECH
+                        </span>
+
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-900">
+                            Shape Your <span
+                                class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">Future
+                                Career</span> With Us
+                        </h1>
+
+                        <p class="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
+                            Empowering ambitious individuals to achieve career success through mentorship, guidance, and
+                            opportunity. Together, let’s build a future you deserve.
+                        </p>
+
+                        <div class="flex items-center space-x-4 mt-8">
+                            <a href="#services"
+                                class="inline-block px-6 py-3 text-white bg-gradient-to-r from-pink-500 to-purple-600 rounded-full shadow-lg hover:scale-105 transform transition duration-300">
+                                Get Started
+                            </a>
+                            <a href="#contact"
+                                class="inline-flex items-center space-x-2 text-purple-600 font-medium hover:underline transition">
+                                <span>Learn More</span>
+                                <i class="fa-solid fa-arrow-right text-purple-500"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="scroll-down absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+                <a href="#services" class="flex flex-col items-center text-gray-500 hover:text-purple-600 transition">
+                    <span class="text-xs mb-1">Scroll</span>
+                    <i class="fa-solid fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </section>
+
+
+
+
+        <!-- Services Section -->
+        <section id="services"
+            class="py-20 bg-gradient-to-b from-blue-500 via-blue-700 to-blue-900 text-white m-6 rounded-3xl shadow-2xl"
+            aria-label="Our Services">
+            <div class="container mx-auto max-w-7xl px-4">
+                <!-- Main Services Header -->
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Our Services</h2>
+                    <div class="w-20 h-1 bg-cyan-300 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-lg text-white/80 max-w-2xl mx-auto">
+                        Helping you every step of your journey – from building the perfect resume to launching your next
+                        big project.
+                    </p>
+                </div>
+
+                <!-- Primary Services Grid -->
+                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Dynamic service cards will be injected here -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Strength Section -->
+        <section id="about"
+            class="py-20 bg-gradient-to-r from-blue-500 via-cyan-400 to-teal-400 rounded-3xl m-6 rocket-container">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Section Header -->
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">About SAVIORHIRE</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-lg md:text-xl text-white max-w-2xl mx-auto">
+                        Transform your career with guidance from our experts.
+                    </p>
+                </div>
+
+                <!-- Vision & Mission Section as Tiles -->
+                <div class="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16 mb-20" data-aos="fade-up">
+                    <!-- Text Tiles -->
+                    <div class="w-full md:w-1/2 space-y-6" data-aos="fade-left">
+                        <!-- Vision Card -->
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 ease-in-out border border-gray-100 group">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center shadow-inner">
+                                    <i class="fas fa-eye text-white text-xl"></i>
+                                </div>
+                                <h3
+                                    class="text-2xl font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300">
+                                    Our Vision
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed text-sm">
+                                To be the leading provider of innovative IT solutions and digital services that empower businesses to thrive in a rapidly evolving technological landscape.
+                            </p>
+                        </div>
+                    
+                        <!-- Mission Card -->
+                        <div
+                            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 ease-in-out border border-gray-100 group">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center shadow-inner">
+                                    <i class="fas fa-bullseye text-white text-xl"></i>
+                                </div>
+                                <h3
+                                    class="text-2xl font-bold text-gray-800 group-hover:text-pink-600 transition-colors duration-300">
+                                    Our Mission
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed text-sm">
+                                To deliver cutting-edge web, mobile, and cloud solutions combined with exceptional customer service, enabling organizations to achieve their digital transformation goals effectively.
+                            </p>
+                        </div>
+                    </div>
+                    
+
+
+                    <!-- rocket-->
+                    <div class="w-full md:w-1/2 relative ">
+                        <!-- 🚀 Rocket -->
+                        <img src="./images/rocket.png" alt="Rocket"
+                            class="w-full h-auto rounded-xl object-cover rocket" />
+                        <!-- 📸 Your Image -->
+                        <img src="./images/image.jpg" alt="About SAVIORTECH"
+                            class="w-full h-auto rounded-xl object-cover change-rocket mt-[10vh]" />
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Strengths Grid -->
+                <div data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-8 text-center text-white">Our Strengths</h3>
+                    <div id="strengths-grid"
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        <!-- Dynamic Strength Cards will be injected here -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    
+
+
+        <!-- Team Section -->
+        <section id="team" class="relative py-20 bg-white overflow-hidden">
+
+            <!-- Wave Background -->
+            <div class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
+                <svg class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="#ebf8ff" fill-opacity="1"
+                        d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,165.3C672,192,768,224,864,234.7C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                    </path>
+                </svg>
+            </div>
+
+            <!-- Content Container -->
+            <div class="relative z-10 max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-900">Our Leadership Team</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Meet the visionaries behind Savior Tech's success
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+                    <!-- Founder -->
+                    <div class="team-member flex flex-col items-center text-center" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="relative mb-6">
+                            <img src="./images/roshan.avif" alt="Sneh Maheshwari"
+                                class="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-blue-100">
+                            <div
+                                class="absolute bottom-0 right-0 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md">
+                                <i class="fas fa-crown text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Roshan agnihotri</h3>
+                        <p class="text-blue-600 font-medium mb-2">Founder & CEO</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
+                                    class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
+                                    class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
+                                    class="fas fa-envelope text-xl"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Co-Founder -->
+                    <div class="team-member flex flex-col items-center text-center" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="relative mb-6">
+                            <img src="./images/vanshyadav.avif" alt="Vansh Yadav Co-Founder & MD"
+                                class="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-blue-100">
+                            <div
+                                class="absolute bottom-0 right-0 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md">
+                                <i class="fas fa-user-tie text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Vansh Yadav</h3>
+                        <p class="text-blue-600 font-medium mb-2">Co-Founder & MD</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
+                                    class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
+                                    class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
+                                    class="fas fa-envelope text-xl"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- success section -->
+        <section id="stats" class="py-20 bg-gradient-to-b from-teal-200 via-teal-500 to-cyan-900 text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-4">Our Success Stories</h2>
+                    <div class="w-24 h-1 bg-white mx-auto mb-6"></div>
+                    <p class="text-xl max-w-2xl mx-auto">Helping 1000+ student in landing job across India</p>
+                </div>
+
+                <!-- Client Logos -->
+                <div class="w-full max-w-6xl mx-auto px-4 overflow-hidden">
+                    <h2 class="text-3xl font-bold text-center mb-8">🎓 Student Success Stories</h2>
+                    <div class="relative w-full max-w-6xl h-[500px]">
+                        <div id="testimonial-container" class="relative w-full h-full"></div>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <button id="prevBtn"
+                            class="p-3 rounded-full bg-white mr-4 shadow-lg text-cyan-600 hover:bg-cyan-500 hover:text-white transition">
+                            <!-- Heroicon: Chevron Left -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <div id="dots" class="mt-6 flex gap-2"></div>
+                        <button id="nextBtn"
+                            class="p-3 rounded-full bg-white ml-4 shadow-lg text-cyan-600 hover:bg-cyan-500 hover:text-white transition">
+                            <!-- Heroicon: Chevron Right -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+
+        <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Header -->
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">Get In Touch</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded"></div>
+                    <p class="text-lg md:text-xl text-gray-500 mt-4 max-w-2xl mx-auto">
+                        Your career transformation starts here. Talk to our team today!
+                    </p>
+                </div>
+
+                <!-- Equal Height Columns -->
+                <div class="flex flex-col md:flex-row gap-10 items-stretch">
+
+                    <!-- Contact Form -->
+                    <div class="md:w-1/2 flex flex-col" data-aos="fade-right">
+                        <div class="bg-white p-8 rounded-3xl shadow-xl flex-1 flex flex-col justify-between">
+                            <h3 class="text-3xl font-bold text-gray-800 mb-6">Send a Message</h3>
+                            <form id="contact-form" onsubmit="sendemail(event)"
+                                class="space-y-4 flex-1 flex flex-col justify-between">
+                                <input type="text" placeholder="Your Name" required name="from_name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition" />
+                                <input type="email" placeholder="Email Address" required name="reply_to"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition" />
+                                <input type="tel" placeholder="Phone Number" required name="phone"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
+                                <textarea placeholder="Your Message" rows="4" required name="message"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition"></textarea>
+                                <button type="submit"
+                                    class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:scale-105 transition">
+                                    Send Message <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="md:w-1/2 flex flex-col" data-aos="fade-left">
+                        <div class="bg-white p-8 rounded-3xl shadow-xl flex-1 flex flex-col justify-between">
+                            <!-- Address -->
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt text-pink-500"></i> Address
+                                </h4>
+                                <p class="text-gray-600">
+                                    Plot no.15 Sector 22 Dwarka, New Delhi, Delhi 110075
+                                </p>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="mt-6 relative rounded-2xl overflow-hidden shadow-md flex-1">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2936101563655!2d77.0494138741654!3d28.560944787330367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1a558d7ae863%3A0x54f312462926f09!2s15%2C%20MBR%20Enclave%2C%20Sector%2022%20Dwarka%2C%20Dwarka%2C%20Delhi%2C%20110077!5e0!3m2!1sen!2sin!4v1752204880505!5m2!1sen!2sin"
+                                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="mt-6 space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-envelope text-purple-500 text-xl"></i>
+                                    <div>
+                                        <h5 class="font-semibold">Email</h5>
+                                        <p class="text-gray-600">support@saviorhires.in</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-phone-alt text-indigo-500 text-xl"></i>
+                                    <div>
+                                        <h5 class="font-semibold">Phone</h5>
+                                        <p class="text-gray-600">+91-8445734331</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Icons -->
+                            <div class="mt-6">
+                                <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+                                <div class="flex gap-3">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white transition">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-purple-500 hover:text-white transition">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-indigo-500 hover:text-white transition">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white transition">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Popup Modal -->
+        <div id="popup" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-2xl font-bold mb-2 text-blue-600">🎉 Thank You!</h3>
+                <p class="text-gray-700 mb-4">Your message has been sent successfully.</p>
+                <button onclick="closePopup()"
+                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                    Close
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="flex items-center text-xl font-bold mb-4">
+                        <img src="./images/logosavior.jpg" alt="SAVIORTECH Logo" class="w-16 h-16 mr-2 rounded-full" />
+                        SAVIORHIRE
+                    </h3>
+
+                    <p class="text-gray-400 mb-4">Transforming businesses through innovative digital solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+                        </li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                        </li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition duration-300">Team</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of
+                                Service</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">
+                                Plot no.15 Sector 22 Dwarka
+                                Delhi, New Delhi, Delhi 110075
+                            </span>
+                        </li>
+                        <li>
+                            <a href="mailto:support@saviorhires.in" class="flex items-center">
+                                <i class="fas fa-envelope mr-3 text-gray-400"></i>
+                                <span class="text-gray-400">support@saviorhires.in</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+918445734331" class="flex items-center">
+                                <i class="fas fa-phone-alt mr-3 text-gray-400"></i>
+                                <span class="text-gray-400">+91-8445734331</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="border-t border-gray-800 mt-4 pt-4 text-center ">
+            <p class="text-gray-400">&copy; 2025 SAVIORHIRE. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        window.onload = function () {
+            emailjs.init({
+                publicKey: "r0tvVuUog4Qi_maFT" // ✅ Replace with your actual Public Key
+            });
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Client Carousel
+        const carousel = document.getElementById('clientCarousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentPosition = 0;
+        const itemWidth = 200; // Width of each client logo
+        const visibleItems = 4; // Number of visible items
+        const totalItems = 4; // Total number of items
+        let isHovered = false;
+
+        // Clone items for infinite scroll effect
+        const items = carousel.children;
+        const cloneFirst = items[0].cloneNode(true);
+        const cloneSecond = items[1].cloneNode(true);
+        const cloneThird = items[2].cloneNode(true);
+        const cloneFourth = items[3].cloneNode(true);
+
+        carousel.appendChild(cloneFirst);
+        carousel.appendChild(cloneSecond);
+        carousel.appendChild(cloneThird);
+        carousel.appendChild(cloneFourth);
+
+        function updateCarousel(animate = true) {
+            if (!animate) {
+                carousel.style.transition = 'none';
+            } else {
+                carousel.style.transition = 'transform 0.5s ease-in-out';
+            }
+            carousel.style.transform = `translateX(${currentPosition}px)`;
+        }
+
+        function resetCarousel() {
+            carousel.style.transition = 'none';
+            currentPosition = 0;
+            updateCarousel(false);
+        }
+
+        function moveNext() {
+            if (!isHovered) {
+                currentPosition -= itemWidth;
+                updateCarousel();
+
+                // Reset position when reaching the end
+                if (currentPosition <= -(itemWidth * totalItems)) {
+                    setTimeout(() => {
+                        resetCarousel();
+                    }, 500);
+                }
+            }
+        }
+
+        function movePrev() {
+            if (currentPosition < 0) {
+                currentPosition += itemWidth;
+                updateCarousel();
+            }
+        }
+
+        // Event Listeners
+        prevBtn.addEventListener('click', movePrev);
+        nextBtn.addEventListener('click', moveNext);
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', () => {
+            isHovered = true;
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            isHovered = false;
+        });
+
+        // Auto-scroll with smooth transition
+        setInterval(moveNext, 3000);
+
+        // Touch events for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        carousel.addEventListener('touchmove', (e) => {
+            touchEndX = e.touches[0].clientX;
+        });
+
+        carousel.addEventListener('touchend', () => {
+            const difference = touchStartX - touchEndX;
+            if (Math.abs(difference) > 50) { // Minimum swipe distance
+                if (difference > 0) {
+                    moveNext();
+                } else {
+                    movePrev();
+                }
+            }
+        });
+
+
+
+
+
+
+
+        // Function to send email using EmailJS
+        function sendemail(event) {
+            event.preventDefault(); // Stop form reload
+            console.log(document.getElementById('contact-form'));
+
+            // Send the form data
+            emailjs.sendForm('service_faoo49p', 'template_sfcfxjr', document.getElementById('contact-form'))
+                .then(() => {
+                    console.log('SUCCESS!');
+                    showPopup(event); // Show popup on success
+                    document.getElementById('contact-form').reset(); // Clear the form
+                }, (error) => {
+                    console.error('FAILED...', error);
+                    alert('Oops! Failed to send message. Please try again.');
+                });
+        }
+
+        // Function to show popup
+        function showPopup(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            document.getElementById('popup').classList.remove('hidden'); // Show popup
+            document.getElementById('contact-form').reset(); // Clear the form
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden'); // Hide popup
+        }
+
+
+        window.addEventListener('scroll', () => {
+            const element = document.getElementById('scrollElement');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                // When scrolled down more than 100px
+                element.classList.remove('mx-4');
+                element.classList.add('mx-0');
+            } else {
+                // When scrolled back to top
+                element.classList.remove('mx-0');
+                element.classList.add('mx-4');
+            }
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

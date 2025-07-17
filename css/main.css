@@ -1,0 +1,188 @@
+* {
+    scroll-behavior: smooth;
+
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+.bubble {
+    position: absolute;
+    border-radius: 9999px;
+    opacity: 0.25;
+    filter: blur(20px);
+    animation: bounceAround 8s ease-in-out infinite alternate;
+}
+
+.bubble:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: 15%;
+    animation-delay: 0s;
+}
+.bubble:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    left: 50%;
+    animation-delay: 1s;
+}
+.bubble:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    left: 30%;
+    animation-delay: 2s;
+}
+.bubble:nth-child(4) {
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 70%;
+    animation-delay: 3s;
+}
+.bubble:nth-child(5) {
+    width: 90px;
+    height: 90px;
+    top: 20%;
+    left: 80%;
+    animation-delay: 4s;
+}
+
+@keyframes bounceAround {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(50vw, 20vh) scale(1.1);
+    }
+    50% {
+        transform: translate(70vw, 80vh) scale(0.95);
+    }
+    75% {
+        transform: translate(20vw, 50vh) scale(1.05);
+    }
+    100% {
+        transform: translate(90vw, 10vh) scale(1);
+    }
+}
+
+
+
+
+
+.center-slide {
+    transform: scale(1.1);
+    filter: blur(0);
+    opacity: 1;
+    z-index: 10;
+}
+
+.side-slide {
+    transform: scale(0.8);
+    filter: blur(2px);
+    opacity: 0.6;
+    z-index: 5;
+}
+
+.bg-slider {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* STICKY */
+    transition: background-image 1s ease-in-out;
+    /* Smooth fade */
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.testimonial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 400px;
+    transform: translate(-50%, -50%) scale(0.7);
+
+    transition: transform 0.7s ease, opacity 0.7s ease, z-index 0.7s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    z-index: 5;
+}
+
+.left1 {
+    transform: translate(-120%, -50%) scale(0.8);
+    z-index: 4;
+}
+
+.left2 {
+    transform: translate(-150%, -50%) scale(0.7);
+    z-index: 3;
+}
+
+.right1 {
+    transform: translate(20%, -50%) scale(0.8);
+    z-index: 4;
+}
+
+.right2 {
+    transform: translate(50%, -50%) scale(0.7);
+    z-index: 3;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+/* 🚀 Rocket fly-up animation with smoother transitions */
+@keyframes fly-up {
+    0% {
+        transform: translateY(40vh) scale(1);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translateY(-50vh) scale(1);
+        opacity: 0;
+    }
+}
+
+.rocket {
+    transition: opacity 2s ease-in-out, transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rocket.fly-up {
+    animation: fly-up 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* 📸 Smooth fade in */
+.change-rocket {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.change-rocket.show {
+    opacity: 1;
+}
