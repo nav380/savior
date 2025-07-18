@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAVIORTECH - Help You Achieve Your Goal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/logosavior.jpg" type="image/png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+
+<body class="font-sans text-gray-800 bg-slate-50 overflow-x-hidden" oncontextmenu="return false">
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/logosavior.jpg" alt="Savior Tech Logo"
+                        class="w-14 h-14 rounded-full object-cover" />
+                    <a href="#" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition duration-300">
+                        Savior Tech
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                    <a href="./index.html" class="relative group transition duration-300">Home
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./service.html" class="relative group transition duration-300">Services
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./about.html" class="relative group transition duration-300">About
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./team.html" class="relative group transition duration-300">Team
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./contact.html" class="relative group transition duration-300">Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <!-- Contact Button -->
+                <div class="bg-black text-white px-4 py-2 rounded-full hidden md:block hover:bg-gray-800 transition">
+                    <a href="./contact.html" class="flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-20">
+        <!-- Team Section -->
+        <section id="team"
+            class="py-20 bg-gradient-to-b from-blue-500 via-blue-700 to-blue-900 text-white m-6 rounded-3xl shadow-2xl"
+            aria-label="Our Team">
+            <div class="container mx-auto max-w-7xl px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Meet the Team</h2>
+                    <div class="w-20 h-1 bg-cyan-300 mx-auto mb-6 rounded-full"></div>
+                    <p class="text-lg text-white/80 max-w-2xl mx-auto">
+                        The visionaries behind our mission. Dedicated to empowering your career journey.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up">
+                    <!-- Founder -->
+                    <div
+                        class="bg-white text-gray-900 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center">
+                        <img src="./images/founder.jpeg" alt="Founder Photo"
+                            class="w-32 h-32 rounded-full mb-4 object-cover shadow-md">
+                        <h3 class="text-xl font-semibold">Alex Johnson</h3>
+                        <p class="text-sm text-blue-600 font-medium mb-2">Founder & CEO</p>
+                        <p class="text-gray-700">
+                            Alex brings over a decade of experience in tech leadership and career mentoring. He's
+                            passionate
+                            about helping people turn ideas into impactful products.
+                        </p>
+                    </div>
+
+                    <!-- Co-Founder -->
+                    <div
+                        class="bg-white text-gray-900 rounded-2xl p-6 shadow-lg flex flex-col items-center text-center">
+                        <img src="./images/cofounder.jpeg" alt="Co-Founder Photo"
+                            class="w-32 h-32 rounded-full mb-4 object-cover shadow-md">
+                        <h3 class="text-xl font-semibold">Samantha Lee</h3>
+                        <p class="text-sm text-blue-600 font-medium mb-2">Co-Founder & CTO</p>
+                        <p class="text-gray-700">
+                            Samantha leads the tech vision of the company, bringing advanced AI and automation into our
+                            career solutions. She’s driven by innovation and impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-200 text-gray-800 pt-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between">
+            <!-- Company Info -->
+            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <h3 class="flex items-center text-xl font-bold mb-4">
+                    <img src="./images/logosavior.jpg" alt="SAVIORTECH Logo" class="w-16 h-16 mr-2 rounded-full" />
+                    SAVIORTECH
+                </h3>
+                <p class="text-gray-600 mb-4">Transforming businesses through innovative digital solutions.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links & Resources -->
+            <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-gray-900 transition">Home</a></li>
+                        <li><a href="./service.html" class="hover:text-gray-900 transition">Services</a></li>
+                        <li><a href="./about.html" class="hover:text-gray-900 transition">About</a></li>
+                        <li><a href="./team.html" class="hover:text-gray-900 transition">Team</a></li>
+                        <li><a href="./contact.html" class="hover:text-gray-900 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-900 transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition">FAQs</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mr-3"></i> Plot no.15 Sector 22
+                            Dwarka, Delhi 110075</li>
+                        <li><i class="fas fa-envelope mr-3"></i> support@saviortech.in</li>
+                        <li><i class="fas fa-phone-alt mr-3"></i> +91-8445734331</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+            class="border-t border-gray-400 bg-gray-900 mt-8 py-4 text-center flex flex-col md:flex-row items-center justify-between px-6">
+            <p class="text-gray-50">&copy; 2025 SAVIORTECH. All rights reserved.</p>
+            <div class="flex space-x-6 mt-2 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/services.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>

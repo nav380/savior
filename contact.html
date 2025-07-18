@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAVIORTECH - Help You Achieve Your Goal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/logosavior.jpg" type="image/png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+
+<body class="font-sans text-gray-800 bg-slate-50 overflow-x-hidden" oncontextmenu="return false">
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/logosavior.jpg" alt="Savior Tech Logo"
+                        class="w-14 h-14 rounded-full object-cover" />
+                    <a href="#" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition duration-300">
+                        Savior Tech
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                    <a href="./index.html" class="relative group transition duration-300">Home
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./service.html" class="relative group transition duration-300">Services
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./about.html" class="relative group transition duration-300">About
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./team.html" class="relative group transition duration-300">Team
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="./contact.html" class="relative group transition duration-300">Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <!-- Contact Button -->
+                <div class="bg-black text-white px-4 py-2 rounded-full hidden md:block hover:bg-gray-800 transition">
+                    <a href="./contact.html" class="flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="relative min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-300 flex items-center justify-center px-6 py-20 overflow-hidden">
+
+    <!-- Gradient Blobs -->
+    <div class="absolute top-[-120px] left-[-120px] w-[400px] h-[400px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+    <div class="absolute top-[50px] right-[-100px] w-[400px] h-[400px] bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+    <div class="absolute bottom-[-100px] left-1/2 w-[300px] h-[300px] bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+
+    <!-- Contact Card -->
+    <section class="relative z-10 max-w-6xl w-full bg-white/70 backdrop-blur-xl border border-white/30 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-2">
+
+        <!-- Left Column: Form -->
+        <div class="p-10 lg:p-14 space-y-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-2 tracking-tight">Contact Us</h2>
+            <p class="text-gray-600 text-base mb-6">We’d love to hear from you! Fill out the form and we’ll get back to you shortly.</p>
+
+            <form class="space-y-5">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="sr-only">Name</label>
+                    <div class="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus-within:ring-2 focus-within:ring-cyan-400 transition">
+                        <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M5.121 17.804A6.978 6.978 0 0012 20a6.978 6.978 0 006.879-5.196M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+                            </path>
+                        </svg>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required
+                            class="bg-transparent flex-1 text-gray-700 placeholder-gray-500 outline-none" />
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="sr-only">Email</label>
+                    <div class="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus-within:ring-2 focus-within:ring-cyan-400 transition">
+                        <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4 6h16M4 6l8 6 8-6M4 18h16V6H4v12z"></path>
+                        </svg>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required
+                            class="bg-transparent flex-1 text-gray-700 placeholder-gray-500 outline-none" />
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message..."
+                        class="w-full bg-white border border-gray-300 text-gray-700 placeholder-gray-500 rounded-xl px-4 py-3 outline-none resize-none h-32 shadow-sm focus:ring-2 focus:ring-cyan-400 transition"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
+                    ✉️ Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- Right Column: Embedded Map -->
+        <div class="h-[500px] w-full border-t lg:border-t-0 lg:border-l border-gray-200">
+            <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086285354235!2d-122.4194150846815!3d37.77492977975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064db198e6d%3A0x2b8d37671c0a4579!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1614564343769!5m2!1sen!2sus">
+            </iframe>
+        </div>
+    </section>
+</main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-200 text-gray-800 pt-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between">
+            <!-- Company Info -->
+            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <h3 class="flex items-center text-xl font-bold mb-4">
+                    <img src="./images/logosavior.jpg" alt="SAVIORTECH Logo" class="w-16 h-16 mr-2 rounded-full" />
+                    SAVIORTECH
+                </h3>
+                <p class="text-gray-600 mb-4">Transforming businesses through innovative digital solutions.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links & Resources -->
+            <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-gray-900 transition">Home</a></li>
+                        <li><a href="./service.html" class="hover:text-gray-900 transition">Services</a></li>
+                        <li><a href="./about.html" class="hover:text-gray-900 transition">About</a></li>
+                        <li><a href="./team.html" class="hover:text-gray-900 transition">Team</a></li>
+                        <li><a href="./contact.html" class="hover:text-gray-900 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-900 transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition">FAQs</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mr-3"></i> Plot no.15 Sector 22
+                            Dwarka, Delhi 110075</li>
+                        <li><i class="fas fa-envelope mr-3"></i> support@saviortech.in</li>
+                        <li><i class="fas fa-phone-alt mr-3"></i> +91-8445734331</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+            class="border-t border-gray-400 bg-gray-900 mt-8 py-4 text-center flex flex-col md:flex-row items-center justify-between px-6">
+            <p class="text-gray-50">&copy; 2025 SAVIORTECH. All rights reserved.</p>
+            <div class="flex space-x-6 mt-2 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/services.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>
