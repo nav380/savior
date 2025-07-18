@@ -19,7 +19,6 @@
     <script src="./js/services.js"></script>
     <script src="./js/strength.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/landing.js"></script>
     <script src="./js/rocket.js"></script>
     <script src="./js/client.js"></script>
     <script src="./js/ourwork.js"></script>
@@ -51,7 +50,7 @@
                         <span
                             class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#services" class="relative group transition duration-300">
+                    <a href="./service.html" class="relative group transition duration-300">
                         Services
                         <span
                             class="absolute left-0 bottom-0 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
@@ -97,42 +96,7 @@
 
 
     <main>
-        <!-- Sticky Background Section with Smooth Slideshow -->
-        <div id="sticky-bg" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
 
-            <canvas id="starCanvas" class="absolute bg-black inset-0 -z-10 h-[100vh]"></canvas>
-
-            <!-- Cursor Glow (above everything but doesn't block) -->
-            <div id="cursorGlow"></div>
-
-            <!-- Main Content -->
-            <div class="relative z-10 p-10 backdrop-blur-sm rounded-3xl w-full space-y-4 text-center font-serif ">
-                <div class="flex justify-center">
-                    <!-- Gradient Star Icon -->
-                    <div
-                        class="text-5xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text animate-pulse">
-                        🌟
-                    </div>
-                </div>
-                <h1
-                    class="lg:text-[120px] text-[48px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
-                    Building Future
-                </h1>
-                <h2 class="lg:text-8xl text-xl text-white/80 mt-8">
-                    Transform Your Career
-                </h2>
-                <p class="text-white/70 lg:text-4xl text-md mt-24">
-                    Streamline millions of people struggling to find a job because of lack of guidance and
-                    opportunities.
-                </p>
-                <button onclick="location.href='#hero-banner'"
-                    class="py-3 px-8 mt-20 rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-semibold btn-glow transition transform hover:scale-105">
-                    Get Started 🚀
-                </button>
-            </div>
-            <!-- Scroll Indicator -->
-            <div class="absolute bg-gray-50 bottom-0 rounded-t-4xl h-8 w-full text-center"></div>
-        </div>
 
 
 
@@ -212,27 +176,7 @@
 
 
 
-        <!-- Services Section -->
-        <section id="services"
-            class="py-20 bg-gradient-to-b from-blue-500 via-blue-700 to-blue-900 text-white m-6 rounded-3xl shadow-2xl"
-            aria-label="Our Services">
-            <div class="container mx-auto max-w-7xl px-4">
-                <!-- Main Services Header -->
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Our Services</h2>
-                    <div class="w-20 h-1 bg-cyan-300 mx-auto mb-6 rounded-full"></div>
-                    <p class="text-lg text-white/80 max-w-2xl mx-auto">
-                        Helping you every step of your journey – from building the perfect resume to launching your next
-                        big project.
-                    </p>
-                </div>
-
-                <!-- Primary Services Grid -->
-                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Dynamic service cards will be injected here -->
-                </div>
-            </div>
-        </section>
+      
 
         <!-- Clients Section -->
         <section id="clients" class="bg-white py-16 m-6 rounded-3xl shadow-lg">
@@ -268,10 +212,14 @@
         <section class="py-20 m-6 rounded-3xl shadow-lg">
             <div class="relative mx-auto px-6 md:px-8 bg-blue-300 h-64 w-full rounded-3xl overflow-hidden max-w-7xl">
                 <!-- Background Blobs -->
-                <div class="absolute z-10 left-0 h-64 w-[25vw] bg-blue-400 rounded-r-full  opacity-70 animate-float"></div>
-                <div class="absolute z-10 left-0 h-64 w-[15vw] bg-blue-500 rounded-r-full  opacity-60 animate-float-slow"></div>
-                <div class="absolute z-10 right-0 h-64 w-[20vw] bg-blue-500 rounded-l-full  opacity-50 animate-float"></div>
-        
+                <div class="absolute z-10 left-0 h-64 w-[25vw] bg-blue-400 rounded-r-full  opacity-70 animate-float">
+                </div>
+                <div
+                    class="absolute z-10 left-0 h-64 w-[15vw] bg-blue-500 rounded-r-full  opacity-60 animate-float-slow">
+                </div>
+                <div class="absolute z-10 right-0 h-64 w-[20vw] bg-blue-500 rounded-l-full  opacity-50 animate-float">
+                </div>
+
                 <!-- Foreground Content -->
                 <div class="relative z-50 p-6">
                     <h2 class="text-3xl font-bold text-center text-white mb-4">Join Our Community</h2>
@@ -288,7 +236,7 @@
                 </div>
             </div>
         </section>
-        
+
 
 
 
@@ -624,90 +572,110 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="flex items-center text-xl font-bold mb-4">
-                        <img src="./images/logosavior.jpg" alt="SAVIORTECH Logo" class="w-16 h-16 mr-2 rounded-full" />
-                        SAVIORTECH
-                    </h3>
-
-                    <p class="text-gray-400 mb-4">Transforming businesses through innovative digital solutions.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+    <footer class="bg-gray-200 text-gray-800 pt-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-between">
+            <!-- Left: Company Info -->
+            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <h3 class="flex items-center text-xl font-bold mb-4">
+                    <img src="./images/logosavior.jpg" alt="SAVIORTECH Logo" class="w-16 h-16 mr-2 rounded-full" />
+                    SAVIORTECH
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    Transforming businesses through innovative digital solutions.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
+            </div>
+
+            <!-- Right: Links Grid -->
+            <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <!-- Quick Links -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+                        <li><a href="#home" class="text-gray-600 hover:text-gray-900 transition duration-300">Home</a>
                         </li>
                         <li><a href="#services"
-                                class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                                class="text-gray-600 hover:text-gray-900 transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition duration-300">About</a>
                         </li>
-                        <li><a href="#team" class="text-gray-400 hover:text-white transition duration-300">Team</a>
+                        <li><a href="#team" class="text-gray-600 hover:text-gray-900 transition duration-300">Team</a>
                         </li>
                         <li><a href="#contact"
-                                class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                                class="text-gray-600 hover:text-gray-900 transition duration-300">Contact</a></li>
                     </ul>
                 </div>
+
+                <!-- Resources -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Resources</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">FAQs</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Privacy
                                 Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Terms of
                                 Service</a></li>
                     </ul>
-
                 </div>
+
+                <!-- Contact Info -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact Info</h3>
                     <ul class="space-y-2">
                         <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-400"></i>
-                            <span class="text-gray-400">
-                                Plot no.15 Sector 22 Dwarka
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-600"></i>
+                            <span class="text-gray-600">
+                                Plot no.15 Sector 22 Dwarka<br>
                                 Delhi, New Delhi, Delhi 110075
                             </span>
                         </li>
                         <li>
                             <a href="mailto:support@saviorhires.in" class="flex items-center">
-                                <i class="fas fa-envelope mr-3 text-gray-400"></i>
-                                <span class="text-gray-400">support@saviortech.in</span>
+                                <i class="fas fa-envelope mr-3 text-gray-600"></i>
+                                <span class="text-gray-600 hover:text-gray-900">support@saviortech.in</span>
                             </a>
                         </li>
                         <li>
                             <a href="tel:+918445734331" class="flex items-center">
-                                <i class="fas fa-phone-alt mr-3 text-gray-400"></i>
-                                <span class="text-gray-400">+91-8445734331</span>
+                                <i class="fas fa-phone-alt mr-3 text-gray-600"></i>
+                                <span class="text-gray-600 hover:text-gray-900">+91-8445734331</span>
                             </a>
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
 
+        <div
+            class="border-t border-gray-400 bg-gray-900 mt-8 py-4 text-center flex flex-col md:flex-row items-center justify-between px-16 ">
+            <!-- Left Side -->
+            <div>
+                <p class="text-gray-50">&copy; 2025 SAVIORTECH. All rights reserved.</p>
             </div>
 
+            <!-- Right Side -->
+            <div class="flex space-x-6 mt-2 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a>
+                <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            </div>
         </div>
-        <div class="border-t border-gray-800 mt-4 pt-4 text-center ">
-            <p class="text-gray-400">&copy; 2025 SAVIORHTECH. All rights reserved.</p>
-        </div>
+
     </footer>
+
+
     <script>
         window.onload = function () {
             emailjs.init({

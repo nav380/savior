@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const servicesGrid = document.getElementById('services-grid');
 
     Services.forEach((service, index) => {
+        console.log(service);
         const delay = (index + 1) * 150; // stagger animations
 
         const featuresHTML = service.features.map(feature => `

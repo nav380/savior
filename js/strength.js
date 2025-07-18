@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const strengthsGrid = document.getElementById('strengths-grid');
 
     strengths.forEach((strength, index) => {
+        console.log(strength);
         const delay = (index + 1) * 100; // AOS stagger
 
         const pointsHTML = strength.points.map(point => `
