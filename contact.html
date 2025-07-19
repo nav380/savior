@@ -21,6 +21,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
 </head>
 
@@ -74,75 +76,142 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="relative min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-300 flex items-center justify-center px-6 py-20 overflow-hidden">
+    <main
+        class="relative min-h-screen w-full bg-gradient-to-br from-blue-100 via-white to-blue-300 flex items-center justify-center px-6 py-20 overflow-hidden">
 
-    <!-- Gradient Blobs -->
-    <div class="absolute top-[-120px] left-[-120px] w-[400px] h-[400px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-    <div class="absolute top-[50px] right-[-100px] w-[400px] h-[400px] bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-    <div class="absolute bottom-[-100px] left-1/2 w-[300px] h-[300px] bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        <!-- Gradient Blobs -->
+        <div
+            class="absolute top-[-120px] left-[-120px] w-[400px] h-[400px] bg-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob">
+        </div>
+        <div
+            class="absolute top-[50px] right-[-100px] w-[400px] h-[400px] bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute bottom-[-100px] left-1/2 w-[300px] h-[300px] bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000">
+        </div>
 
-    <!-- Contact Card -->
-    <section class="relative z-10 max-w-6xl w-full bg-white/70 backdrop-blur-xl border border-white/30 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-2">
+        <!-- Contact Card -->
+        <section id="contact" class="py-20 w-full max-w-7xl mx-auto">
+            <div class=" w-full mx-auto px-4">
+                <!-- Header -->
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">Get In Touch</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded"></div>
+                    <p class="text-lg md:text-xl text-gray-500 mt-4 max-w-2xl mx-auto">
+                        Your career transformation starts here. Talk to our team today!
+                    </p>
+                </div>
 
-        <!-- Left Column: Form -->
-        <div class="p-10 lg:p-14 space-y-6">
-            <h2 class="text-4xl font-bold text-gray-800 mb-2 tracking-tight">Contact Us</h2>
-            <p class="text-gray-600 text-base mb-6">We’d love to hear from you! Fill out the form and we’ll get back to you shortly.</p>
+                <!-- Equal Height Columns -->
+                <div class="flex flex-col-reverse md:flex-row gap-10 items-stretch">
 
-            <form class="space-y-5">
-                <!-- Name -->
-                <div>
-                    <label for="name" class="sr-only">Name</label>
-                    <div class="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus-within:ring-2 focus-within:ring-cyan-400 transition">
-                        <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M5.121 17.804A6.978 6.978 0 0012 20a6.978 6.978 0 006.879-5.196M15 11a3 3 0 11-6 0 3 3 0 016 0z">
-                            </path>
-                        </svg>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required
-                            class="bg-transparent flex-1 text-gray-700 placeholder-gray-500 outline-none" />
+
+
+                    <!-- Contact Info -->
+                    <div class="md:w-1/2 flex flex-col" data-aos="fade-left">
+                        <div class="bg-white p-8 rounded-3xl shadow-xl flex-1 flex flex-col justify-between">
+                            <!-- Address -->
+                            <div>
+                                <h4 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                                    <i class="fas fa-map-marker-alt text-pink-500"></i> Address
+                                </h4>
+                                <p class="text-gray-600">
+                                    Plot no.15 Sector 22 Dwarka, New Delhi, Delhi 110075
+                                </p>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="mt-6 relative rounded-2xl overflow-hidden shadow-md flex-1">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2936101563655!2d77.0494138741654!3d28.560944787330367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1a558d7ae863%3A0x54f312462926f09!2s15%2C%20MBR%20Enclave%2C%20Sector%2022%20Dwarka%2C%20Dwarka%2C%20Delhi%2C%20110077!5e0!3m2!1sen!2sin!4v1752204880505!5m2!1sen!2sin"
+                                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Email & Phone -->
+                            <div class="mt-6 space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-envelope text-purple-500 text-xl"></i>
+                                    <div>
+                                        <h5 class="font-semibold">Email</h5>
+                                        <p class="text-gray-600">support@saviorhires.in</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fas fa-phone-alt text-indigo-500 text-xl"></i>
+                                    <div>
+                                        <h5 class="font-semibold">Phone</h5>
+                                        <p class="text-gray-600">+91-8445734331</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Icons -->
+                            <div class="mt-6">
+                                <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+                                <div class="flex gap-3">
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white transition">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-purple-500 hover:text-white transition">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-indigo-500 hover:text-white transition">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white transition">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Email -->
-                <div>
-                    <label for="email" class="sr-only">Email</label>
-                    <div class="flex items-center bg-white border border-gray-300 rounded-xl px-4 py-3 shadow-sm focus-within:ring-2 focus-within:ring-cyan-400 transition">
-                        <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4 6h16M4 6l8 6 8-6M4 18h16V6H4v12z"></path>
-                        </svg>
-                        <input type="email" id="email" name="email" placeholder="Email Address" required
-                            class="bg-transparent flex-1 text-gray-700 placeholder-gray-500 outline-none" />
+                    <!-- Contact Form -->
+                    <div class="md:w-1/2 flex flex-col" data-aos="fade-right">
+                        <div class="bg-white p-8 rounded-3xl shadow-xl flex-1 flex flex-col justify-between">
+                            <h3 class="text-3xl font-bold text-gray-800 mb-6">Send a Message</h3>
+                            <form id="contact-form" onsubmit="sendemail(event)"
+                                class="space-y-4 flex-1 flex flex-col justify-between">
+                                <input type="text" placeholder="Your Name" required name="from_name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition" />
+                                <input type="email" placeholder="Email Address" required name="reply_to"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition" />
+                                <input type="tel" placeholder="Phone Number" required name="phone"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
+                                <textarea placeholder="Your Message" rows="4" required name="message"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition"></textarea>
+                                <button type="submit"
+                                    class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:scale-105 transition">
+                                    Send Message <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Message -->
-                <div>
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Your Message..."
-                        class="w-full bg-white border border-gray-300 text-gray-700 placeholder-gray-500 rounded-xl px-4 py-3 outline-none resize-none h-32 shadow-sm focus:ring-2 focus:ring-cyan-400 transition"></textarea>
-                </div>
 
-                <!-- Submit Button -->
-                <button type="submit"
-                    class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-xl transition duration-300 shadow-md hover:shadow-lg">
-                    ✉️ Send Message
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Popup Modal -->
+        <div id="popup" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-2xl font-bold mb-2 text-blue-600">🎉 Thank You!</h3>
+                <p class="text-gray-700 mb-4">Your message has been sent successfully.</p>
+                <button onclick="closePopup()"
+                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                    Close
                 </button>
-            </form>
+            </div>
         </div>
-
-        <!-- Right Column: Embedded Map -->
-        <div class="h-[500px] w-full border-t lg:border-t-0 lg:border-l border-gray-200">
-            <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                class="w-full h-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086285354235!2d-122.4194150846815!3d37.77492977975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064db198e6d%3A0x2b8d37671c0a4579!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1614564343769!5m2!1sen!2sus">
-            </iframe>
-        </div>
-    </section>
-</main>
+    </main>
 
 
 
@@ -218,7 +287,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="./js/services.js" defer></script>
+   
     <script src="./js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
     <script>
@@ -226,6 +295,47 @@
             AOS.init();
         });
     </script>
+
+    <script>
+        window.onload = function () {
+            emailjs.init({
+                publicKey: "r0tvVuUog4Qi_maFT" // ✅ Replace with your actual Public Key
+            });
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+
+
+
+        function sendemail(event) {
+            event.preventDefault(); // Stop form reload
+            console.log(document.getElementById('contact-form'));
+
+            // Send the form data
+            emailjs.sendForm('service_faoo49p', 'template_sfcfxjr', document.getElementById('contact-form'))
+                .then(() => {
+                    console.log('SUCCESS!');
+                    showPopup(event); // Show popup on success
+                    document.getElementById('contact-form').reset(); // Clear the form
+                }, (error) => {
+                    console.error('FAILED...', error);
+                    alert('Oops! Failed to send message. Please try again.');
+                });
+        }
+
+        // Function to show popup
+        function showPopup(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            document.getElementById('popup').classList.remove('hidden'); // Show popup
+            document.getElementById('contact-form').reset(); // Clear the form
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden'); // Hide popup
+        }
+    </script>
+
 </body>
 
 </html>

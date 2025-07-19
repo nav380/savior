@@ -186,3 +186,21 @@ section {
 .change-rocket.show {
     opacity: 1;
 }
+
+
+
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+.hover\:rotate-y-180:hover {
+    transform: rotateY(180deg);
+}
+
+[transform-style\:preserve-3d] {
+    transform-style: preserve-3d;
+}
+
+[backface-visibility\:hidden] {
+    backface-visibility: hidden;
+}
