@@ -74,23 +74,53 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="pt-20">
+    <main class="pt-4 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
         <!-- Services Section -->
         <section id="services"
-            class="py-20  text-gray-900 "
-            aria-label="Our Services">
-            <div class="container mx-auto max-w-7xl px-4">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Our Services</h2>
-                    <div class="w-20 h-1 bg-cyan-300 mx-auto mb-6 rounded-full"></div>
-                    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                        Helping you every step of your journey – from building the perfect resume to launching your next
-                        big
-                        project.
+            class="relative py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 overflow-hidden">
+            <!-- Background Blobs -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div
+                    class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-full blur-3xl animate-pulse">
+                </div>
+                <div
+                    class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-pink-600/20 rounded-full blur-3xl animate-pulse delay-2000">
+                </div>
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-green-400/10 to-teal-600/10 rounded-full blur-3xl animate-pulse delay-4000">
+                </div>
+            </div>
+
+            <div class="relative container mx-auto max-w-7xl px-4">
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-sm font-medium mb-6">
+                        ✨ Our Services
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
+                        Transforming Ideas Into <span
+                            class="block bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 bg-clip-text text-transparent">Digital
+                            Success</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                        Helping you every step of your journey – from building the perfect digital presence to launching
+                        your next big project with cutting-edge technology and proven strategies.
                     </p>
                 </div>
-                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- JS will inject service cards here -->
+
+                <!-- Services Grid -->
+                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-16">
+                    <button
+                        class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition cursor-pointer">
+                        ⚡ Start Your Project Today
+                    </button>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">
+                        Free consultation • No commitment required
+                    </p>
                 </div>
             </div>
         </section>

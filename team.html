@@ -74,80 +74,141 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="pt-20">
+    <main class="pt-8">
         <!-- Team Section -->
         <section id="team" class="relative py-20 bg-white overflow-hidden">
-
-            <!-- Wave Background -->
+            <!-- Decorative Wave Background -->
             <div class="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
                 <svg class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path fill="#ebf8ff" fill-opacity="1"
+                    <path fill="#f0f9ff" fill-opacity="1"
                         d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,165.3C672,192,768,224,864,234.7C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
                     </path>
                 </svg>
             </div>
 
-            <!-- Content Container -->
+            <!-- Section Content -->
             <div class="relative z-10 max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-4xl font-bold mb-4 text-gray-900">Our Leadership Team</h2>
-                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Meet the visionaries behind Savior Tech's success
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold mb-4 text-gray-900">Our Leadership Team</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-yellow-400 to-pink-500 mx-auto mb-6 rounded"></div>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Meet the visionaries and their teams driving <span
+                            class="font-medium text-purple-600">SaviorTech’s success.</span>
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-
+                <!-- Org Chart -->
+                <div class="flex flex-col items-center relative">
                     <!-- Founder -->
-                    <div class="team-member flex flex-col items-center text-center" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="relative mb-6">
-                            <img src="./images/roshan.avif" alt="Sneh Maheshwari"
-                                class="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-blue-100">
-                            <div
-                                class="absolute bottom-0 right-0 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md">
-                                <i class="fas fa-crown text-xl"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Roshan agnihotri</h3>
-                        <p class="text-blue-600 font-medium mb-2">Founder & CEO</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
-                                    class="fas fa-envelope text-xl"></i></a>
+                    <div class="flex justify-center w-full">
+                        <div class="flex flex-col items-center relative">
+                            <img src="./images/roshan.avif" alt="Founder"
+                                class="w-32 h-32 rounded-full object-cover border-4 border-yellow-400 shadow-lg hover:scale-105 transition-transform duration-300">
+                            <h3 class="mt-4 text-xl font-bold text-gray-800">Roshan Agnihotri</h3>
+                            <p class="text-yellow-600 font-medium">Founder & CEO</p>
+                            <!-- Vertical Line -->
+                            <div class="w-1 h-12 bg-gradient-to-b from-yellow-400 to-pink-500"></div>
+
                         </div>
                     </div>
+                    <div class="absolute bottom-4  left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-pink-500">
+                        <div class="absolute left-0 bg-yellow-500  h-4 w-1"></div>
 
-                    <!-- Co-Founder -->
-                    <div class="team-member flex flex-col items-center text-center" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="relative mb-6">
-                            <img src="./images/vanshyadav.avif" alt="Vansh Yadav Co-Founder & MD"
-                                class="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-blue-100">
-                            <div
-                                class="absolute bottom-0 right-0 bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md">
-                                <i class="fas fa-user-tie text-xl"></i>
-                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Vansh Yadav</h3>
-                        <p class="text-blue-600 font-medium mb-2">Co-Founder & MD</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
-                                    class="fab fa-linkedin text-xl"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
-                                    class="fab fa-twitter text-xl"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-blue-600 transition"><i
-                                    class="fas fa-envelope text-xl"></i></a>
+                        <div class="absolute right-0 bottom-0 bg-pink-500 h-4 w-1 ">
+
                         </div>
                     </div>
 
                 </div>
+
+                <!-- Leads Row -->
+                <div class="relative w-full flex justify-center mt-8">
+                    <!-- Horizontal Line -->
+
+
+                    <!-- Each Lead -->
+                    <div class="flex justify-around w-full max-w-5xl gap-8">
+                        <!-- Team Lead -->
+                        <div class="flex flex-col items-center relative group">
+                            <img src="./images/teamlead.avif" alt="Team Lead"
+                                class="w-24 h-24 rounded-full object-cover border-4 border-green-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+                            <h4 class="mt-3 text-lg font-semibold text-gray-700">Sanya Verma</h4>
+                            <p class="text-green-600 text-sm">Team Lead</p>
+                            <!-- Vertical Line -->
+                            <div class="w-1 h-10 bg-gradient-to-b from-green-300 to-green-500"></div>
+
+                            <!-- Sub-team -->
+                            <div class="flex gap-6 mt-8">
+                                <div class="flex flex-col items-center">
+                                    <img src="./images/developer1.avif" alt="Developer"
+                                        class="w-20 h-20 rounded-full border-4 border-purple-300 shadow hover:scale-105 transition-transform duration-300">
+                                    <p class="mt-1 text-sm text-gray-600">Developer</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img src="./images/designer.avif" alt="UI/UX Designer"
+                                        class="w-20 h-20 rounded-full border-4 border-purple-300 shadow hover:scale-105 transition-transform duration-300">
+                                    <p class="mt-1 text-sm text-gray-600">UI/UX Designer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HR Lead -->
+                        <div class="flex flex-col items-center relative group">
+                            <img src="./images/hr.avif" alt="HR Manager"
+                                class="w-24 h-24 rounded-full object-cover border-4 border-yellow-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+                            <h4 class="mt-3 text-lg font-semibold text-gray-700">Rahul Singh</h4>
+                            <p class="text-yellow-600 text-sm">HR Manager</p>
+                            <!-- Vertical Line -->
+                            <div class="w-1 h-10 bg-gradient-to-b from-yellow-300 to-yellow-500"></div>
+
+                            <!-- Sub-team -->
+                            <div class="flex gap-6 mt-8">
+                                <div class="flex flex-col items-center">
+                                    <img src="./images/recruiter.avif" alt="Recruiter"
+                                        class="w-20 h-20 rounded-full border-4 border-yellow-300 shadow hover:scale-105 transition-transform duration-300">
+                                    <p class="mt-1 text-sm text-gray-600">Recruiter</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img src="./images/payroll.avif" alt="Payroll Specialist"
+                                        class="w-20 h-20 rounded-full border-4 border-yellow-300 shadow hover:scale-105 transition-transform duration-300">
+                                    <p class="mt-1 text-sm text-gray-600">Payroll Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Marketing Lead -->
+                        <div class="flex flex-col items-center relative group">
+                            <img src="./images/marketer.avif" alt="Digital Marketer"
+                                class="w-24 h-24 rounded-full object-cover border-4 border-pink-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+                            <h4 class="mt-3 text-lg font-semibold text-gray-700">Anjali Mehta</h4>
+                            <p class="text-pink-600 text-sm">Digital Marketer</p>
+                            <!-- Vertical Line -->
+                            <div class="w-1 h-10 bg-gradient-to-b from-pink-300 to-pink-500"></div>
+
+                            <!-- Sub-team -->
+                            <div class="flex gap-6 mt-8">
+                                <div class="flex flex-col items-center">
+                                    <img src="./images/seo.avif" alt="SEO Specialist"
+                                        class="w-20 h-20 rounded-full border-4 border-pink-300 shadow hover:scale-105 transition-transform duration-300">
+                                    <p class="mt-1 text-sm text-gray-600">SEO Specialist</p>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img src="./images/content.avif" alt="Content Writer"
+                                        class="w-20 h-20 rounded-full border-4 border-pink-300 shadow hover:scale-105 transition-transform duration-300">
+                                    <p class="mt-1 text-sm text-gray-600">Content Writer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
+
+
+
 
 
     <!-- FOOTER -->
@@ -230,6 +291,7 @@
             AOS.init();
         });
     </script>
+
 </body>
 
 </html>
